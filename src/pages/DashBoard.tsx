@@ -12,7 +12,7 @@ import { SumModal } from "../components/SumModal"
 import { Searchbar } from "../components/SearchBar"
 import { useNavigate } from "react-router-dom"
 import aiGlitter from "../icons/AIglitter.png";
-import chatGPTThumbnail from "/home/nitiraj/brainly-fe/src/icons/ChatGPT Image Jun 25, 2025, 01_37_03 PM.png";
+import chatGPTThumbnail from "../icons/ChatGPT Image Jun 25, 2025, 01_37_03 PM.png";
 
 
 

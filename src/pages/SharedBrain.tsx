@@ -2,8 +2,8 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Card } from "../components/card";
-import aiGlitter from "/home/nitiraj/brainly-fe/src/icons/ChatGPT Image Jun 25, 2025, 12_33_55 PM.png";
-import chatGPTThumbnail from "/home/nitiraj/brainly-fe/src/icons/ChatGPT Image Jun 25, 2025, 01_37_03 PM.png";
+import aiGlitter from "../icons/AIglitter.png";
+import chatGPTThumbnail from "../icons/ChatGPT Image Jun 25, 2025, 01_37_03 PM.png";
 import { Button } from "../components/Button";
 
 export  function SharedBrain() {
