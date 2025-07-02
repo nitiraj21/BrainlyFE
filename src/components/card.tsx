@@ -80,7 +80,13 @@ export function Card({ type, title, link, contentId, onDelete, onSummarizeClick,
               width="560"
               className="w-full"
               height="315"
-              src={link.replace("watch", "embed").replace("?v=", "/")}
+                src={
+                link.includes("youtu.be")
+                  ? `https://www.youtube.com/embed/${link.split("youtu.be/")[1].split("?")[0]}`
+                  : link.includes("watch?v=")
+                  ? `https://www.youtube.com/embed/${link.split("v=")[1].split("&")[0]}`
+                  : ""
+              }
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
