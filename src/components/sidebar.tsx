@@ -21,7 +21,7 @@ interface SidebarProps {
 export function Sidebar( { ytClick, setYtClick, twClick, setTwClick, docClick, setDocClick }: SidebarProps) {
 
   return (
-    <div className="fixed top-72 left-4">
+    <div className="fixed top-96 left-4">
     <div className="  h-auto w-16 rounded-3xl bg-gradient-to-b from-purple-600 to-purple-900/70
          shadow-lg border radius-15 border-purple-300/30 flex flex-col items-center py-6 gap-2 z-50"
          style={{ transform: "translateZ(0)", backfaceVisibility: "hidden" }}

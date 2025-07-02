@@ -5,7 +5,7 @@ export function useContent() {
     const [content, setContent] = useState<any[]>([]);
     const [username, setUsername] = useState<string>("");
     function refresh(){
-        axios.get("http://localhost:3000/api/v1/content", {
+        axios.get("https://brainlybe.onrender.com/api/v1/content", {
             headers: {
                 "Authorization": localStorage.getItem("authorization")
             }

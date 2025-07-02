@@ -27,7 +27,7 @@ export function CreateContentModal({ open, onClose }: Props) {
         const link = linkRef.current?.value;
 
         await axios.post(
-            "http://localhost:3000/api/v1/content",
+            "https://brainlybe.onrender.com/api/v1/content",
             {
                 title,
                 type,
