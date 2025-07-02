@@ -2,17 +2,16 @@ import { useEffect, useRef, useState } from "react"
 import { Button } from "../components/Button"
 import { Card } from "../components/card"
 import { CreateContentModal } from "../components/CreateContentModal"
-import { PlusIcon } from "../icons/plusIcon"
-import { ShareIcon } from "../icons/shareIcon"
+import { PlusIcon } from "../svgs/plusIcon"
+import { ShareIcon } from "../svgs/shareIcon"
 import { Sidebar } from "../components/sidebar"
 import { useContent } from "../hooks/useContent"
 import axios from "axios";
-import { Logo2 } from "../icons/logo2"
+import { Logo2 } from "../svgs/logo2"
 import { SumModal } from "../components/SumModal"
 import { Searchbar } from "../components/SearchBar"
 import { useNavigate } from "react-router-dom"
-import aiGlitter from "../icons/AIglitter.png";
-import chatGPTThumbnail from "../icons/ChatGPT Image Jun 25, 2025, 01_37_03 PM.png";
+
 
 
 
@@ -165,9 +164,9 @@ export function DashBoard() {
            title={title}
            link={link}
            landing={false}
-           chatGPTThumbnail={chatGPTThumbnail}
+           chatGPTThumbnail={"/icons/docs.png"}
            onDelete={handleDelete}
-           aiGlitter={aiGlitter}
+           aiGlitter={"/icons/AIglitter.png"}
            shared={false}
            onSummarizeClick={() => {
             refsetContentId(_id);
@@ -189,7 +188,7 @@ export function DashBoard() {
                   type={type}
                   title={title}
                   link={link}
-                  aiGlitter={aiGlitter}
+                  aiGlitter={"/icons/AIglitter.png"}
                   landing={false}
                   shared={false}
                   onDelete={handleDelete}
@@ -216,7 +215,7 @@ export function DashBoard() {
                   title={title}
                   link={link}
                   landing={false}
-                  aiGlitter={aiGlitter}
+                  aiGlitter={"/icons/AIglitter.png"}
                   shared={false}
                   onDelete={handleDelete}
                   onSummarizeClick={() => {
@@ -240,9 +239,9 @@ export function DashBoard() {
               title={title}
               link={link}
               landing={false}
-              aiGlitter={aiGlitter}
+              aiGlitter={"/icons/AIglitter.png"}
               shared={false}
-              chatGPTThumbnail={chatGPTThumbnail}
+              chatGPTThumbnail={"/icons/docs.png"}
               onDelete={handleDelete}
               onSummarizeClick={() => {
                 refsetContentId(_id);
@@ -264,7 +263,8 @@ export function DashBoard() {
                   type={type}
                   title={title}
                   link={link}
-                  aiGlitter={aiGlitter}
+                  aiGlitter={"/icons/AIglitter.png"}
+                  chatGPTThumbnail={"/icons/docs.png"}
                   landing={false}
                   shared={false}
                   onDelete={handleDelete}

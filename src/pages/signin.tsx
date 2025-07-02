@@ -32,7 +32,7 @@ export function Signin(){
   <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-purple-800 opacity-25 blur-2xl rounded-full transform-gpu" />
   <div className=" bg-white/10 backdrop-blur-md  p-4 w-80  rounded-lg shadow-lg  rounded-xl border border-white/20 shadow-xl ">
       <div className="flex justify-center">
-          <img className="w-20 h20 ml-3" src="src/icons/3dimg.png"></img>
+          <img className="w-20 h20 ml-3" src="/icons/3dimg.png"></img>
          
       </div>
       <div className="flex justify-center mb-4">

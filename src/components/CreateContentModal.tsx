@@ -1,4 +1,4 @@
-import { CrossIcon } from "../icons/crossIcon";
+import { CrossIcon } from "../svgs/crossIcon";
 import { Button } from "./Button";
 import { Input } from "./Input";
 import { useRef, useState } from "react";

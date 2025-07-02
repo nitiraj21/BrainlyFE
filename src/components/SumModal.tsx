@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Input } from "./Input";
 import axios from "axios";
 import { Button } from "./Button";
-import { CrossIcon } from "../icons/crossIcon";
+import { CrossIcon } from "../svgs/crossIcon";
 
 
 type Props = {    open: boolean;

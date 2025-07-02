@@ -37,7 +37,15 @@ export function Button({ variant, text, startIcon, onClick, loading = false, ful
       `}
       disabled={loading}
     >
-      {startIcon && <span >{startIcon}</span>}
+      {startIcon && (
+        <span>
+          {typeof startIcon === "string" ? (
+            <img src={startIcon} alt="icon" className="w-5 h-5" />
+          ) : (
+            startIcon
+          )}
+        </span>
+      )}
       {text}
     </button>
   );

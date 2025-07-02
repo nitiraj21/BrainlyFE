@@ -1,6 +1,6 @@
 import { Button } from "./Button";
 import { Input } from "./Input";
-import { Search } from "../icons/search";
+import { Search } from "../../public/icons/search";
 
 interface SearchbarProps {
     ref: React.RefObject<HTMLInputElement | null>;

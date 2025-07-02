@@ -1,11 +1,11 @@
 
-import { ShareIcon } from "../icons/shareIcon";
-import { CrossIcon } from "../icons/crossIcon";
+import { ShareIcon } from "../svgs/shareIcon";
+import { CrossIcon } from "../svgs/crossIcon";
 import { useEffect, useState } from "react";
-import brainLogo from "../icons/brainlyNoBG'.png"; 
+import brainLogo from "/icons/brainlyNoBG.png"; 
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { YoutubeIcon } from "../icons/YoutubeIcon";
+import { YoutubeIcon } from "../svgs/YoutubeIcon";
 import { FaLink, FaTwitter, FaYoutube } from "react-icons/fa";
 
 
@@ -16,12 +16,12 @@ interface cardProps {
     title: string;
     link: string;
     contentId: string;
-    landing : Boolean;
+    landing : boolean;
     onDelete: ((id: string) => void) | null;
     onSummarizeClick?: () => void;
     chatGPTThumbnail?: string;
     aiGlitter?: string;
-    shared? : Boolean;
+    shared? : boolean;
 }
 
 
@@ -42,7 +42,7 @@ export function Card({ type, title, link, contentId, onDelete, onSummarizeClick,
           bg-gradient-to-br from-purple-700 via-purple-600 to-purple-800 
           backdrop-blur-md border border-purple-500/30 rounded-xl p-4 w-80 cursor-pointer 
           shadow-[0_4px_30px_rgba(128,0,255,0.3)] hover:shadow-[0_6px_40px_rgba(128,0,255,0.6)] 
-          transition-all duration-300 ease-in-out transform ${landing? 'h-90' : ''} ${shared? 'h-90' : ''}
+          transition-all duration-300 ease-in-out transform ${landing? 'h-full' : ''} ${shared? 'h-90' : ''}
           ${expanded ? 'h-auto' : 'h-85 overflow-hidden relative'} 
           will-change-transform ring-1 ring-purple-400/20 text-white font-michroma text-sm font-semibold
           hover:ring-purple-500/50 hover:bg-purple-600/80 hover:scale-[1.03] hover:-translate-y-1 hover: shadow-none
@@ -91,14 +91,17 @@ export function Card({ type, title, link, contentId, onDelete, onSummarizeClick,
 
           {type === "twitter" && (
             <blockquote className="twitter-tweet">
-              <a href={link.replace("x.com", "twitter.com")}></a>
+              <a  href={link.replace("x.com", "twitter.com")}></a>
             </blockquote>
           )}
           {type === "link" && (
             <div>
-            <img src={chatGPTThumbnail} onClick={()=>{ 
-               window.open(link);
-              }}/>
+            <img 
+              src={chatGPTThumbnail} 
+              alt="Link Preview"
+              onClick={() => window.open(link, "_blank")} 
+              loading="lazy"
+/>
             </div>
             )}
         </div>

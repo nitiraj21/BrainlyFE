@@ -1,4 +1,4 @@
-import { CrossIcon } from "../icons/crossIcon";
+import { CrossIcon } from "../svgs/crossIcon";
 import { Button } from "./Button";
 import { Input } from "./Input";
 import { useRef, useState } from "react";
@@ -15,6 +15,7 @@ type Props = {
 enum ContentType {
     Youtube = "youtube",
     Twitter = "twitter",
+    Link = 'link'
 }
 export function ContentModal2({ open, onClose, onSubmit }: Props) {
     const titleRef = useRef<HTMLInputElement>(null);
@@ -70,6 +71,13 @@ export function ContentModal2({ open, onClose, onSubmit }: Props) {
                                             variant={type === ContentType.Twitter ? "primary" : "secondary"}
                                             onClick={() => {
                                                 setType(ContentType.Twitter);
+                                            }}
+                                        ></Button>
+                                        <Button
+                                            text="Link"
+                                            variant={type === ContentType.Link ? "primary" : "secondary"}
+                                            onClick={() => {
+                                                setType(ContentType.Link);
                                             }}
                                         ></Button>
                                     </div>

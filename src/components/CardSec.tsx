@@ -22,28 +22,28 @@ export function CardsSection() {
         <div className="aspect-square transform-gpu backface-hidden will-change-transform" data-aos="fade-up" data-aos-delay="0">
           <CardLanding 
             title="Create your digital brain"
-            image="src/icons/3dimg.png"
+            image="/icons/3dimg.png"
             className="h-64 w-64"
           />
         </div>
         <div className="aspect-square transform-gpu backface-hidden will-change-transform" data-aos="fade-up" data-aos-delay="300">
           <CardLanding 
             title="Save Videos, Tweets & Articles"
-            image="src/icons/ChatGPT Image Jun 25, 2025, 01_37_03 PM.png"
+            image="/icons/docs.png"
             className="h-64 w-64"
           />
         </div>
         <div className="aspect-square transform-gpu backface-hidden will-change-transform" data-aos="fade-up" data-aos-delay="100">
           <CardLanding 
             title="Share your brain to others"
-            image="src/pages/share.png"
+            image="/icons/share.png"
             className="h-64 w-64"
           />
         </div>
         <div className="aspect-square transform-gpu backface-hidden will-change-transform" data-aos="fade-up" data-aos-delay="200">
           <CardLanding 
             title="AI-Powered Summaries"
-            image="src/icons/AIglitter.png"
+            image="/icons/AIglitter.png"
             className="h-64 w-64"
           />
         </div>

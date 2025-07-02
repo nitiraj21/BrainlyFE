@@ -1,8 +1,8 @@
 
-import { Logo } from "../icons/logo";
-import { Logo2 } from "../icons/logo2";
-import { TwitterIcon } from "../icons/twitterIcon";
-import { YoutubeIcon } from "../icons/YoutubeIcon";
+import { Logo } from "../svgs/logo";
+import { Logo2 } from "../svgs/logo2";
+import { TwitterIcon } from "../svgs/twitterIcon";
+import { YoutubeIcon } from "../svgs/YoutubeIcon";
 import { SidebarItem } from "./sidebarItem";
 import {  FaYoutube, FaTwitter,  } from "react-icons/fa";
 import { IoLinkSharp } from "react-icons/io5";
