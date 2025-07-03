@@ -18,7 +18,7 @@ export function SumModal({ open, onClose, contentId }: Props) {
         try {
             IsLoading(true);
           const response = await axios.post(
-            "http://localhost:3000/api/v1/brain/summarize",
+            "https://brainlybe.onrender.com/api/v1/brain/summarize",
             { contentId },
             {
               headers: {
