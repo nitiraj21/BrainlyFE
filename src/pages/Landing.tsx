@@ -115,15 +115,6 @@ export function Landing() {
             Store Anything, Even This.
               </h2>
               <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 mt-6 w-full gap-5'>
-            <Card
-                type="youtube"
-                title="Brainly Introduction"
-                link="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                contentId="1"
-                onDelete={() => {}}
-                landing={true}
-
-              />
 
             <Card
                 type="twitter"
