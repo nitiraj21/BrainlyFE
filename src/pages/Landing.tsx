@@ -77,6 +77,7 @@ export function Landing() {
             className="w-60 h-60 sm:w-80 sm:h-80 md:w-[42rem] md:h-[42rem] object-contain animate-float  "
             src="/icons/3dhero.png"
             alt="3D Brain"
+            loading = "lazy"
           />
         </div>
     </div>
@@ -213,7 +214,7 @@ export function Landing() {
             </div>  
           </div>
           <div>
-            <div className="mx-4 sm:mx-8 md:mx-16 lg:mx-32 xl:mx-60 mb-10 bg-white/10 backdrop-blur-md p-4 sm:p-6 md:p-8 rounded-xl border border-white/20 shadow-xl  hover:scale-105 transition-transform duration-300 text-center pt-8 md:pt-16 transform-gpu backface-hidden will-change-transform relative overflow-hidden">
+            <div className="mx-4 sm:mx-8 md:mx-16 lg:mx-32 xl:mx-60 mb-10 bg-white/10 b p-4 sm:p-6 md:p-8 rounded-xl border border-white/20 shadow-xl  hover:scale-105 transition-transform duration-300 text-center pt-8 md:pt-16 transform-gpu backface-hidden will-change-transform relative overflow-hidden">
               <h2 className="text-3xl md:text-4xl font-bold font-orbitron text-glow-pulse text-white  mb-4">Start Building Your Digital Brain Today</h2>
               <p className="text-md md:text-xl mb-6 text-white font-michroma">It’s free, forever.</p>
               <button
