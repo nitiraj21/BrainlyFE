@@ -114,17 +114,7 @@ export function Landing() {
             <h2 className="text-2xl pb-10 md:text-4xl font-bold text-white font-orbitron text-glow-pulse">
             Store Anything, Even This.
               </h2>
-              <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4 mt-6 w-full gap-5'>
-
-            <Card
-                type="twitter"
-                title="Brainly Introduction"
-                link="https://x.com/dril/status/205052027259195393"
-                contentId="1"
-                onDelete={() => {}}
-                landing={true}
-
-              />
+              <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-6 px-4 mt-6 w-full gap-5'>
 
             <Card
                 type="link"
